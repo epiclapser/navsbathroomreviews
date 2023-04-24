@@ -1,1 +1,1 @@
-web: gunicorn navsbathroomreviews:Reviews
+web: gunicorn navsbathroomreviews.wsgi
