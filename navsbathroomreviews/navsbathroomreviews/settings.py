@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-!b$+o6*k90(on*u7ymdtuht^%e$v!3sw-gkrm1@0e7eo)_o&x4
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['navsbathroomreviews.herokuapp.com']
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 MEDIA_URL = '/media/'
@@ -135,3 +134,6 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import django_heroku
+django_heroku.settings(locals())
