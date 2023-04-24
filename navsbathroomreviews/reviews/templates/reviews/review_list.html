@@ -1,0 +1,13 @@
+<!-- templates/reviews/bathroom_list.html -->
+<body style="background-color:white;background-image:url(https://i.imgur.com/379kg3P.png)">
+<center>
+<h1>&#128701; Nav's Famous Bathroom Reviews &#128701;</h1>
+<ul>
+{% for bathroom in review_list %}
+    <li><a href="{% url 'review_detail' bathroom.slug  %}" class="btn btn-primary">{{bathroom.title}}</a></li>
+{% empty %}
+    <li>No bathrooms yet.</li>
+{% endfor %}
+</ul>
+</center>
+</body>
