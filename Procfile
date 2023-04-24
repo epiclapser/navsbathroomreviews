@@ -1,1 +1,1 @@
-web: gunicorn navsbathroomreviews:navsbathroomreviews
+web: gunicorn navsbathroomreviews:Reviews
